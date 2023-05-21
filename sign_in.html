@@ -5,53 +5,32 @@
 <head>
     <meta charset="utf-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sign_in.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .error {
-            border: 2px solid red;
-        }
-    </style>
 </head>
 
 <body>
-    <section id='header'>
-        <a padding-left:10px href="index.html"><img src="./images/logo.jpg" height="50" width="70" id="logo" alt=""></a>
-        <div>
-            <ul id="list2" type="none">
-                <li style="display:inline"><a href="index.html">Home</a></li>
-                <li style="display:inline"><a href="shop.html">Shop</a></li>
-                <li style="display:inline"><a href="about_us.html">About Us</a></li>
-                <li style="display:inline"><a class="selected" href="sign_in.html">Sign in</a></li>
-            </ul>
+    <div class="box">
+        <div class="title-box">
+            <h2>EZ Mart</h2>
+            <p>EZ Mart helps you purchase products online.</p>
         </div>
-    </section>
-    <section id="signin">
-        <h2>Sign In</h2>
-        <div class="center">
-            <div class="username">
-                <label>Email or Phone:</label>
-                <input type="text" required>
-            </div>
-            <div class="pass">
-                <label>Password:</label>
-                <input type="password" name="password" id="password">
+        <div class="form-box">
+            <form action="#">
+                <input type="text" placeholder="Email or phone number">
+                <input id="password" type="password" placeholder="Password">
                 <i class="fa-solid fa-eye" onclick="showPass()" id="pass_img"></i>
-            </div>
-            <div class="forgot-pass">
+                <button type="submit">Log In</button>
                 <a href="#">Forgot Password?</a>
-            </div>
-            <div class="btn">
-                <div class="inner"></div>
-                <button type="submit">login</button>
-            </div>
-            <div class="signup-link">
-                Not a member? <a href="#">Signup now</a>
+            </form>
+            <hr>
+            <div class="create-btn">
+                <a href="#" target="_blank">Create New Account</a>
             </div>
         </div>
-    </section>
+    </div>
     <script src="script.js"></script>
 </body>
 

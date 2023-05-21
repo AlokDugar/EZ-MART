@@ -2,6 +2,7 @@ let pass = document.getElementById('password');
 let mode = 'hide';
 let i = document.getElementById('pass_img');
 function showPass() {
+  console.log('Activate');
   if (mode == 'hide') {
     pass.setAttribute('type', 'text');
     i.setAttribute('class', 'fa-solid fa-eye-slash');
